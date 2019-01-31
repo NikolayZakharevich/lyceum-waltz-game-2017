@@ -1,0 +1,737 @@
+<html>
+<head>
+  <meta charset = UTF-8> 
+  <title>Выпускной Вальс</title>  
+  <link href="styles/style1.css" rel=stylesheet type=text/css>
+  <script src="scripts/intro.js" type=text/javascript></script> 
+  <script src="scripts/dance.js" type=text/javascript></script> 
+</head>
+<body background="images/background3.gif" onLoad="checkName();">
+  <script>addLoadEvent(preloader);</script>
+  <div id='0' class='entName'>
+    <p>Введите имя</p>  
+	<input type="text" id="name1" autofocus="true" onKeyDown="checkName()" onKeyUp="checkName()" onSubmit="name2.onClick()">
+	<input type="button" id="name2" value="Готово" onClick="hide(0);  show(0.1);  show(1); getName(1); changeBackground(2); musicOn()">
+  </div>
+  
+  <div id="0.1" class="choosing">
+    <img src="images/text-background.gif">
+  </div>
+  
+  <div class="text" id="1" onClick="hide(1); show(1.1)">	
+	<img src="images/text-background1.gif">
+  </div>
+  
+  <div class="text" id="1.1" onClick="hide(1.1); show(2); getName(2)">	
+    <img src="images/text-background1.gif">
+	<p class="p1">Марина Васильевна:</p>
+	<p>
+	  <br>Уже май, совсем скоро выпускной! Нужно обязательно станцевать вальс, ведь это самая запоминающаяся часть выпускного вечера!
+	</p>
+  </div>
+  
+  <div class="text" id="2" onClick="hide(2); show(2.1)">	  
+	<p>
+	  <br>Я даже не знаю с чего начать..
+	</p>
+	<img src="images/text-background1.gif">
+  </div>
+   
+  <div class="text" id="2.1" onClick="hide(2.1); show(3);  changeBackground(4); getName(3)">	
+    <img src="images/text-background1.gif">
+	<p class="p1">Марина Васильевна:</p>
+	<p>
+	  <br>Спроси у Вани, я думаю, он будет рад помочь.
+	</p>
+  </div> 
+  
+  <div class="text" id="3" onClick="hide(3); show(4);  getName(4)">
+    <img src="images/text-background1.gif">
+	<p>
+	  <br>Эй, Ваня!
+	</p>
+  </div>
+  
+  <div class="text" id="4" onClick="hide(4); show(5); getName(5)">
+    <img src="images/text-background1.gif">
+  </div>
+  
+  <div class="text" id="5" onClick="hide(5); show(6)" >
+    <img src="images/text-background1.gif">
+	<p>
+	   <br>Марина Васильевна сказала мне танцевать вальс, а я не знаю с чего начать! Помоги.
+	</p>
+  </div>
+  
+  <div class="text" id="6" onClick="hide(6); show(6.1)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Для начала найди партнёршу.
+	</p>
+  </div>
+  
+  <div class="text" id="6.1" onClick="hide(6.1); show(6.2); getName(6.2)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>У меня есть одна знакомая, которую ты можешь попробовать пригласить. Наверное, она сейчас в столовой.
+	</p>
+  </div>
+  
+  <div class="text" id="6.2" onClick="hide(6.2); show(6.3)">
+    <img src="images/text-background1.gif">
+	<p>
+	  <br>Как я её найду?
+	</p>
+  </div>
+  
+  <div class="text" id="6.3" onClick="hide(6.3); hide(0.1); show(7); changeBackground(5);">
+    <img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Она зеленоглазая блондинка. Сегодня я видел её. Она в зелёной кофточке с красными украшениями.
+	</p>
+  </div>
+  
+  <div id="7" class="ladys">
+    <p> 
+	<img src="images/lady1.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady2.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady3.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady4.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady5.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)"><br>
+	<img src="images/lady6.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady7.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady8.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady9.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady10.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)"><br>
+	<img src="images/lady11.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady12.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady13.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">&emsp;
+	<img src="images/lady14.gif" onClick="hide(7); show (0.1); show(8); changeBackground(6)">&emsp;
+	<img src="images/lady15.gif" onClick="hide(7); show (0.1); show(7.1); changeBackground(5.1)">
+  </div>
+  
+  <div class="text" id="7.1" onClick="hide(0.1); hide(7.1); show(7); changeBackground(5)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Чувааак, кого ты себе выбрал??
+	</p>
+  </div>
+  
+  <div class="text" id="8" onClick="hide(8); show(9); changeBackground(4)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Саша:</p>
+	<p>
+	  <br>Привет.
+	</p>
+  </div>
+  
+  <div class="text" id="9" onClick="hide(9); show(10); show(10.1); show(10.2); show(10.3); changeBackground(6)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Расскажи ей, какой ты мужественный. Так ты её покоришь.
+	</p>
+  </div>
+  
+  <div id="10" class="choosing">
+    <img src="images/text-background.gif">
+  </div>
+  <div id ="10.2" class="choosing2" style="top: 403pt; width:100%"  onClick="hide(10); hide(10.2); show(0.2); show(11.2); getName(11.2)">
+	<p>
+	  Я делаю 25 на брусьях!
+	</p>
+  </div>
+  <div id ="10.1" class="choosing1" style="top: 373pt; width:100%" onClick="hide(10); hide(10.1); show(0.2); show(11.1); getName(11.1)">
+	<p>
+	  Потанцуй со мной, пожалуйста, меня в младшей школе обижали
+	</p>
+  </div>
+  <div id ="10.3" class="choosing3" style="top: 433pt; width:100%"  onClick="hide(10); hide(10.1); hide(10.2); hide(10.3); show(11.3); getName(11.3)">
+	<p>
+	  Привет, не хочешь потанцевать со мной?
+	</p>
+  </div>
+ 
+  <div id="0.2" class="choosing">
+    <img src="images/text-background.gif">
+  </div>
+  
+  <div id ="11.1" class="text" onClick="hide(11.1); show(12.1); changeBackground(7)">
+    <img src="images/text-background1.gif">
+	<p>
+	  <br>Потанцуй со мной, пожалуйста, меня в младшей школе обижали.
+    </p>
+  </div>
+  <div id ="11.2" class="text" onClick="hide(11.2); show(12.2); changeBackground(7)">
+    <img src="images/text-background1.gif">
+	<p>
+	  <br>Я делаю 25 на брусьях!
+    </p>
+  </div>
+  <div id ="11.3" class="text" onClick="hide(11.3); show(12.3); changeBackground(8)">
+    <img src="images/text-background1.gif">
+	<p>
+	  <br>Привет, не хочешь потанцевать со мной?
+    </p>
+  </div>
+  
+  <div class="text" id="12.1" onClick="show(10); hide(12.1); show(12.4); getName(12.4); changeBackground(5)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Саша:</p>
+	<p>
+	  <br>Мне очень жаль.
+	</p>
+  </div>
+  <div class="text" id="12.2" onClick="show(10); hide(12.2); show(12.4); getName(12.4); changeBackground(5)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Саша:</p>
+	<p>
+	  <br>Ну и как дела в качалке?
+	</p>
+  </div>
+  <div class="text" id="12.3" onClick="hide(12.3); show(13); changeBackground(9)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Саша:</p>
+	<p>
+	  <br>А давай. Пойдём к Артёму, запишемся.
+	</p>
+  </div>
+  <div class="text" id="12.4" onClick="hide (0.2); hide(12.4); show(10); changeBackground(6)">
+    <img src="images/text-background1.gif">
+	<p>
+	  <br>Что-то я сделал не так..
+	</p>
+  </div>
+  
+  <div class="text" id="13" onClick="hide(13); show(14)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Артём:</p>
+	<p>
+	  <br>Здравствуйте, ребята! Вы как раз вовремя. Сегодня у нас первая репетиция.
+	</p>
+  </div>
+  
+  <div class="text" id="14" onClick="hide(14); show(15)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Артём:</p>
+	<p>
+	  <br>Ничего сложного, нужно всего лишь научиться шагать в ритме вальса.
+	</p>
+  </div>
+  
+  <div class="text" id="15" onClick="hide(15); show(16)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Артём:</p>
+	<p>
+	  <br>И да. Никто пока не терял здесь монетки, поэтому не стоит внимательно смотреть в пол.
+	</p>
+  </div>
+  
+  <div class="choosing" id="16">
+    <img src="images/text-background.gif">
+    <p onClick="hide(0.1); hide(16); show(16.1); musicOff(); dance1()">Попробовать</p>
+  </div>
+  
+  <div style="display: none" id="16.1">
+    <div style="position: absolute; top: 0pt; left:50%">
+	  <img src="images/emotion1.png" name="mark">
+	  <input id="input1" onkeydown="getArrow(event)" onkeyup="deleteArrow(event)" size=1 style="opacity:0.1; position: absolute; left: 400pt; top:0pt">
+	  <img src="images/arrows.gif" width="300pt" style ="position: absolute; top: 196pt; left: 0pt" name="arrow" onClick="StopDancing()">
+    </div>
+	
+	 <p id="rez" class="accuracy">Точность - 0%</p>
+	 
+	<div style="position: absolute; top: 350pt; left: 400pt">
+	  <p align = center style="font-family:Century Schoolbook; font-size:250%; margin-bottom:-10pt; font-weight: bold; color: purple">Прогресс</p>
+	  <img src="images/progress0.png"  width = 600 id="progline">
+	</div>
+	
+	
+	<div id="spawn" style="float: left">
+	</div>
+	
+	<div  id="spawn0" style="position: absolute; top: 400pt;">
+	  <img src="images/left.png" id="left0">
+	  <img src="images/up.png" id="up0">
+	  <img src="images/down.png" id="down0">
+	  <img src="images/right.png" id="right0">
+	</div>
+	
+  </div>
+  <div id="16.2" class="choosing">
+    <img src="images/text-background.gif">
+      <p onClick="hide(16.2); show(0.1); show(1.17); musicOn(); changeBackground(9);">Продолжить</p>
+  </div>
+  <div id="16.3" class="choosing">
+    <img src="images/text-background.gif">
+      <p onClick=" hide(16.3); show(0.1); show(2.17); musicOn(); changeBackground(9);">Продолжить</p>
+  </div>
+  
+  
+
+   <div class="text" id="1.17" onClick="hide(1.17); show(1.18); changeBackground(2)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Артём:</p>
+	<p>
+	  <br>Хорошо.
+	</p>
+  </div>
+  <div class="text" id="2.17" onClick="hide(2.17); show(2.18);  changeBackground(2)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Артём:</p>
+	<p>
+	  <br>Плохо.
+	</p>
+  </div> 
+  
+  <div class="text" id="1.18" onClick="hide(1.18); show(1.19); getName(1.19)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Марина Васильевна:</p>
+	<p>
+	  <br>Как успехи?
+	</p>
+  </div>
+  <div class="text" id="2.18" onClick="hide(2.18); show(2.19); getName(2.19)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Марина Васильевна:</p>
+	<p>
+	  <br>Как успехи?
+	</p>
+  </div>
+  
+  <div class="text" id="1.19" onClick="hide(1.19); show(120)">
+    <img src="images/text-background1.gif">
+	<p>
+	  <br>Лучше не бывает! Спасибо, что посоветовали танцевать вальс.
+	</p>
+  </div>
+  <div class="text" id="2.19" onClick="hide(2.19); show(220)">
+    <img src="images/text-background1.gif">
+	<p>
+	  <br>Так себе.
+	</p>
+  </div>
+  
+  <div class="text" id="120" onClick="hide(120); show(21); show(21.3); show(21.2); show(21.1)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Марина Васильевна:</p>
+	<p>
+	  <br>Ещё бы! Я знаю, о чём говорю.
+	</p>
+  </div>
+  
+  <div class="text" id="220" onClick="hide(220); show(21); show(21.3); show(21.2); show(21.1);">
+    <img src="images/text-background1.gif">
+	<p class="p1">Марина Васильевна:</p>	
+	<p>
+	  <br>Ещё не вечер.
+	</p>
+  </div>
+  
+  <div id="21" class="choosing">
+    <img src="images/text-background.gif">
+  </div>
+  
+  <div id ="21.2" class="choosing2" style="top: 403pt; width:100%"  onClick="hide(21); hide(21.1);hide(21.2);hide(21.3); show(22.2); getName(22.2)">
+	<p>
+	   Пойду в тренажёрку. До свидания!  
+	</p>
+  </div>
+  <div id ="21.1" class="choosing1" style="top: 373pt; width:100%" onClick="hide(21); hide(21.1);hide(21.2);hide(21.3); show(22.1); getName(22.1)">
+	<p>
+	  Пойду прогуляюсь. До свидания!
+	</p>
+  </div>
+  <div id ="21.3" class="choosing3" style="top: 433pt; width:100%"  onClick="hide(21); hide(21.1);hide(21.2);hide(21.3); show(22.3); getName(22.3)">
+	<p>
+	  Можно вам сейчас Shopping рассказать?
+	</p>
+  </div>
+  
+  <div id ="22.1" class="text" onClick="hide(22.1); show(23.1)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Пойду прогуляюсь. До свидания!
+	</p>
+  </div>
+  <div id ="22.2" class="text" onClick="hide(22.2); show(23.2)">
+	<img src="images/text-background1.gif">
+	<p>
+	   <br>Пойду в тренажёрку. До свидания!  
+	</p>
+  </div>
+  <div id ="22.3" class="text" onClick="hide(22.3); show(23.3)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Можно вам сейчас Shopping рассказать?
+	</p>
+  </div>
+  
+  <div id ="23.1" class="text" onClick="hide(23.1); show(24); changeBackground(15); getName(24)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Марина Васильевна:</p>
+	<p>
+	  <br>Всего доброго!
+	</p>
+  </div>
+  <div id ="23.2" class="text" onClick="hide(23.2);  show(224.1); changeBackground(12);  kachalka(1); getName(224)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Марина Васильевна:</p>
+	<p>
+	   <br>Всего доброго! 
+	</p>
+  </div>
+  <div id ="23.3" class="text" onClick="hide(23.3); getName(24); show(21); show(21.3); show(21.2); show(21.1);">
+	<img src="images/text-background1.gif">
+	<p class="p1">Марина Васильевна:</p>
+	<p>
+	  <br>У меня планы на вечер, давай в другой раз.
+	</p>
+  </div>
+  
+  
+  <div id="224.1" style="display:none">
+  </div>
+  
+  <div id ="224" class="text" onClick="hide(224); show(225); getName(225)">
+	<img src="images/text-background1.gif">
+  </div>
+  
+  <div id ="225" class="text" onClick="hide(225); show(226); changeBackground(11)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Привет, Ваня.
+	</p>
+  </div>
+  
+  <div id ="226" class="text" onClick="hide(226); show(227); getName(227)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Решил подкачаться?
+	</p>
+  </div>
+  
+  <div id ="227" class="text" onClick="hide(227); show(228); changeBackground(10)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Да, нужно бы привести себя в форму. Я же в четвертом заходе.
+	</p>
+  </div>
+  
+  <div id ="228" class="text" onClick="hide(228); show(229)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Красавчик.
+	</p>
+  </div>
+  
+  <div id ="229" class="text" onClick="hide(229); show(230); getName(230)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Хочешь расскажу кое-что?
+	</p>
+  </div>
+  
+  <div id ="230" class="text" onClick="hide(230); show(231); changeBackground(13)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Давай.
+	</p>
+  </div>
+  
+  <div id ="231" class="text" onClick="hide(231); show(232); getName(232)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Походу вчера в качалку приходили какие-то телочки.
+	</p>
+  </div>
+  
+  <div id ="232" class="text" onClick="hide(232); show(233); changeBackground(14)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Ууу.
+	</p>
+  </div>
+  
+  <div id ="233" class="text" onClick="hide(233); show(234); changeBackground(10);  getName(234) ">
+	<img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Смотри, что я нашёл.
+	</p>
+  </div>
+  
+  <div id ="234" class="text" onClick="hide(234); show(235)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Серёжки?
+	</p>
+  </div>
+  
+  <div id ="235" class="text" onClick="hide(235); show(236); getName(236)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Да.
+	</p>
+  </div>
+  
+  <div id ="236" class="text" onClick="hide(236); show(237); getName(237)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Стоп, Ваня. Кажется, я знаю, чьи это. Можешь дать их мне?
+	</p>
+  </div>
+  
+  <div id ="237" class="text" onClick="hide(237); show(238)">
+	<img src="images/text-background1.gif">
+  </div>
+  
+  <div id ="238" class="text" onClick="hide(238); show(239); getName(239)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Что ж, хватит трепаться, пора качаться.
+	</p>
+  </div>
+  
+  <div id ="239" class="text" onClick="hide(239); changeBackground(12); kachalka(2); getName(240)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>За дело!
+	</p>
+  </div>
+  
+  <div id="239.1" style="display:none">
+  </div>
+  
+  <div id ="240" class="text" onClick="hide(240); show(241); changeBackground(13)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Уфф.
+	</p>
+  </div>
+  
+  <div id ="241" class="text" onClick="hide(241); show(242); getName(242)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Уже уходишь?
+	</p>
+  </div>
+  
+  <div id ="242" class="text" onClick="hide(242); show(243); changeBackground(10)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Да, спасибо за тренировку.
+	</p>
+  </div>
+  
+  <div id ="243" class="text" onClick="hide(243); show(244); getName(244)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Ваня:</p>
+	<p>
+	  <br>Всегда пожалуйста. Удачи!
+	</p>
+  </div>
+  
+  <div id ="244" class="text" onClick="hide(244); show(245); changeBackground(15); getName(245)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Пока.
+	</p>
+  </div>
+  
+  <div id ="245" class="text" onClick="hide(245); show(246); getName(246)">
+	<img src="images/text-background1.gif">
+  </div>
+  
+  <div id ="246" class="text" onClick="hide(246); show(247); changeBackground(16)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Привет. Как дела?
+	</p>
+  </div>
+  
+  <div id ="247" class="text" onClick="hide(247); show(248); getName(248)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Саша:</p>
+	<p>
+	  <br>Я потеряла свои серёжки. Ты их не видел случайно?
+	</p>
+  </div>
+  
+  <div id ="248" class="text" onClick="hide(248); show(249); getName(249); changeBackground(17)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Может и видел. Это не твои случайно?
+	</p>
+  </div>
+  
+  <div id ="249" class="text" onClick="hide(249); show(250); getName(250)">
+	<img src="images/text-background1.gif">
+  </div>
+  
+  <div id ="250" class="text" onClick="hide(250); show(251)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Брось, пустяки.
+	</p>
+  </div>
+  
+  <div id ="251" class="text" onClick="hide(251); show(252); getName(252)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Саша:</p>
+	<p>
+	  <br>У нас скоро репетиция. Пойдём?
+	</p>
+  </div>
+  
+  <div id ="252" class="text" onClick="hide(252); show(38); changeBackground(9)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Да.
+	</p>
+  </div>
+  
+  <div class="text" id="24" onClick="hide(24); show(25); getName(25)">	
+	<img src="images/text-background1.gif">
+  </div>
+  
+  <div id ="25" class="text" onClick="hide(25); show(26); changeBackground(16)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Привет. Как дела?
+	</p>
+  </div>
+   
+  <div id ="26" class="text" onClick="hide(26); show(27); getName(27)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Саша:</p>
+	<p>
+	  <br>Я потеряла свои серёжки. Ты их не видел случайно?
+	</p>
+  </div>
+  
+  <div id ="27" class="text" onClick="hide(27); show(28)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Нет. Может, кто-то отнес их на вахту?
+	</p>
+  </div>
+  
+  <div id ="28" class="text" onClick="hide(28); show(29); getName(29)">
+	<img src="images/text-background1.gif">
+	<p class="p1">Саша:</p>
+	<p>
+	  <br>Я стесняюсь идти одна. Сходишь со мной?
+	</p>
+  </div>
+  
+  <div id ="29" class="text" onClick="hide(29); show(21); show(21.3); show(21.2); show(21.1); changeBackground(2)">
+	<img src="images/text-background1.gif">
+	<p>
+	  <br>Конечно. Пойдём.
+	</p>
+  </div>
+  
+ 
+  <div class="text" id="38" onClick="hide(38); show(39)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Артём:</p>
+	<p>
+	  <br>Всем привет. С каждым разом вас всё больше. Сегодня попробуем танцевать в парах.
+	</p>
+  </div>
+  
+  <div class="text" id="39" onClick="hide(39); show(40)">
+    <img src="images/text-background1.gif">
+	<p class="p1">Артём:</p>
+	<p>
+	  <br>Поехали. Раз-два-три, два-два-три..
+	</p>
+  </div>
+  
+  <div class="choosing" id="40">
+    <img src="images/text-background.gif">
+    <p onClick="hide(0.1); hide(0.2); hide(40); show(40.1); musicOff(); dance2()">Танцевать</p>
+  </div>
+  
+  <div style="display: none" id="40.1">
+    <div style="position: absolute; top: 0pt; left:50%">
+	  <img src="images/emotion1.png" name="mark2">
+	  <input id="input2" onkeydown="getArrow(event)" onkeyup="deleteArrow(event)" size=1 style="opacity:0.1; position: absolute; left: 400pt; top:0pt">
+	  <img src="images/arrows.gif" width="300pt" style ="position: absolute; top: 196pt; left: 0pt" name="arrow2" onClick="StopDancing()">
+    </div>
+	
+	 <p id="rez2" class="accuracy">Точность - 0%</p>
+	 
+	<div style="position: absolute; top: 350pt; left: 400pt">
+	  <p align = center style="font-family:Century Schoolbook; font-size:250%; margin-bottom:-10pt; font-weight: bold; color: purple">Прогресс</p>
+	  <img src="images/progress0.png"  width = 600 id="progline2">
+	</div>
+	
+	<div id="spawn2" style="float: left">
+	</div>
+	
+	<div  id="spawn0" style="position: absolute; top: 400pt;">
+	  <img src="images/left.png" id="left0">
+	  <img src="images/up.png" id="up0">
+	  <img src="images/down.png" id="down0">
+	  <img src="images/right.png" id="right0">
+	</div>
+  </div>
+  <div id="40.2" class="choosing">
+    <img src="images/text-background.gif">
+      <p onClick="show(0.2); hide(40.2); show(60); musicOn(); changeBackground(9);">Продолжить</p>
+  </div>
+  
+  
+  <div class="choosing" id="60">
+    <img src="images/text-background.gif">
+    <p onClick="hide(0.1); hide(0.2); hide(60); show(60.1); musicOff(); dance3()">Попробовать</p>
+  </div>
+  
+  <div style="display: none" id="60.1">
+    <div style="position: absolute; top: 0pt; left:50%">
+	  <img src="images/emotion1.png" name="mark3">
+	  <input id="input3" onkeydown="getArrow(event)" onkeyup="deleteArrow(event)" size=1 style="opacity:0.1; position: absolute; left: 400pt; top:0pt">
+	  <img src="images/arrows.gif" width="300pt" style ="position: absolute; top: 196pt; left: 0pt" name="arrow3" onClick="StopDancing()">
+    </div>
+	
+	 <p id="rez3" class="accuracy">Точность - 0%</p>
+	 
+	<div style="position: absolute; top: 350pt; left: 400pt">
+	  <p align = center style="font-family:Century Schoolbook; font-size:250%; margin-bottom:-10pt; font-weight: bold; color: purple">Прогресс</p>
+	  <img src="images/progress0.png"  width = 600 id="progline3">
+	</div>
+	
+	<div id="spawn3" style="float: left">
+	</div>
+	
+	<div  id="spawn0" style="position: absolute; top: 400pt;">
+	  <img src="images/left.png" id="left0">
+	  <img src="images/up.png" id="up0">
+	  <img src="images/down.png" id="down0">
+	  <img src="images/right.png" id="right0">
+	</div>
+  </div>
+  <div id="60.2" class="choosing">
+    <img src="images/text-background.gif">
+      <p onClick="hide(0.1); hide(0.2); hide(60.2); show(61); musicOn(); changeBackground(18);">Продолжить</p>
+  </div>
+  
+  <div id="61">
+  </div>
+
+
+</body>
+</html>
